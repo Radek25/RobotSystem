@@ -10,6 +10,9 @@ SPIS TREŚCI
 :root{
     --white: #ffffff;
     --mainBackgroundColor: #f5fafd;
+    --mainTitleColor: #3C424F;;
+    --mainFontColor: #707070;
+    --mainBlueColor: #03a9f4;
 }
 *{
     margin: 0;
@@ -19,6 +22,10 @@ SPIS TREŚCI
 }
 body{
     background-color: var(--mainBackgroundColor);
+}
+button{
+    outline: none;
+    border: none;
 }
 /*-- STYLE OGÓLNE - END --*/
 
@@ -30,9 +37,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     background-color: var(--white);
-    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
+    z-index: 10;
 }
 
 header > img, nav{
@@ -58,12 +66,13 @@ nav > ul{
 nav > ul > li > a{
     padding: 5px 15px;
     margin: 0px 20px;
+    cursor: pointer;
 }
 
 header > .languageButtonsWrapper{
     position: absolute;
     top: 0px;
-    right: 10px;
+    right: 20px;
 }
 .languageButtonsWrapper > button{
     width: 30px;
@@ -72,3 +81,58 @@ header > .languageButtonsWrapper{
     background-color: red;
 }
 /*-- STYLE DLA NAVBAR - END --*/
+
+/*-- STYLE DLA SLIDER - BEGIN --*/
+.sliderWrapper{
+    height: 600px;
+    overflow: hidden;
+}
+.carousel-item > img{
+    width: 100%;
+    height: 600px;
+    filter: brightness(75%);
+}
+/*-- STYLE DLA SLIDER - END --*/
+
+/*-- STYLE DLA SEKCJI O NAS - BEGIN --*/
+.aboutUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 5vw;
+    background-color: var(--mainBackgroundColor);
+}
+.aboutUs > article{
+    width: 38vw;
+    text-align: center;
+}
+.aboutUs > article > h2{
+    display: inline-block;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 5vh;
+    color: var(--mainTitleColor);
+    padding: 0 25px 10px;
+    border-bottom: 3px solid var(--mainBlueColor);
+}
+.aboutUs > article > p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--mainFontColor);
+}
+.aboutUs > article > button{
+    width: 170px;
+    height: 45px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    background-color: var(--mainBlueColor);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.aboutUs > img{
+    width: 36vw;
+    border-radius: 50px 5px 50px 5px;
+}
