@@ -13,6 +13,7 @@ SPIS TREŚCI
     --mainTitleColor: #3C424F;;
     --mainFontColor: #707070;
     --mainBlueColor: #03a9f4;
+    --mainFooterColor: #404040;
 }
 *{
     margin: 0;
@@ -22,6 +23,20 @@ SPIS TREŚCI
 }
 body{
     background-color: var(--mainBackgroundColor);
+}
+h2{
+    display: inline-block;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 4.5vh;
+    color: var(--mainTitleColor);
+    padding: 0 2rem 0.6rem;
+    border-bottom: 3px solid var(--mainBlueColor);
+}
+article > p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--mainFontColor);
 }
 button{
     outline: none;
@@ -41,6 +56,7 @@ header{
     background-color: var(--white);
     box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
     z-index: 10;
+    top: 0;
 }
 
 header > img, nav{
@@ -84,7 +100,8 @@ header > .languageButtonsWrapper{
 
 /*-- STYLE DLA SLIDER - BEGIN --*/
 .sliderWrapper{
-    height: 600px;
+    margin-top: 90px;
+    height: 450px;
     overflow: hidden;
 }
 .carousel-item > img{
@@ -106,20 +123,6 @@ header > .languageButtonsWrapper{
     width: 38vw;
     text-align: center;
 }
-.aboutUs > article > h2{
-    display: inline-block;
-    font-size: 2.7rem;
-    font-weight: 500;
-    margin-bottom: 5vh;
-    color: var(--mainTitleColor);
-    padding: 0 25px 10px;
-    border-bottom: 3px solid var(--mainBlueColor);
-}
-.aboutUs > article > p{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: var(--mainFontColor);
-}
 .aboutUs > article > button{
     width: 170px;
     height: 45px;
@@ -136,3 +139,113 @@ header > .languageButtonsWrapper{
     width: 36vw;
     border-radius: 50px 5px 50px 5px;
 }
+/*-- STYLE DLA SEKCJI O NAS - END --*/
+
+/*-- STYLE DLA SEKCJI WARTOŚĆ DODANA - BEGIN --*/
+.howWeCanHelp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 2vw;
+    background-color: var(--mainBackgroundColor);
+}
+.howWeCanHelp > article{
+    width: 80vw;
+    text-align: center;
+}
+.howWeCanHelp > article > button{
+    width: 170px;
+    height: 45px;
+    margin: 20px 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    background-color: var(--mainBlueColor);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.howWeCanHelp > div {
+    margin: 50px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.howWeCanHelp > div > img{
+    margin: 0 20px;
+}
+/*-- STYLE DLA SEKCJI WARTOŚĆ DODANA - END --*/
+
+/*-- STYLE DLA SEKCJI WSPÓŁPRACA - BEGIN --*/
+.cooperation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 5vw;
+    background-color: var(--mainBackgroundColor);
+}
+.cooperation > article{
+    width: 38vw;
+    text-align: center;
+}
+.cooperation > img{
+    width: 36vw;
+    border-radius: 10px;
+}
+/*-- STYLE DLA SEKCJI WSPÓŁPRACA - END --*/
+
+/*-- STYLE DLA SEKCJI ZAUFALI NAM - BEGIN --*/
+.ourCustomers{
+    padding: 60px 10px;
+    background-color: var(--mainBackgroundColor);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ourCustomers > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourCustomers > div > img{
+    margin: 10px 15px;
+}
+/*-- STYLE DLA SEKCJI ZAUFALI NAM - END --*/
+
+/*-- STYLE DLA SEKCJI FOOTER - BEGIN--*/
+footer{
+    height: 40vh;
+    background-color: var(--mainFooterColor);
+    box-shadow: 0px 0px 4px 1px var(--mainFontColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10vw;
+    
+}
+footer > address{
+    width: 20vw;
+    color: var(--white);
+    text-align: center;
+    line-height: 0.8rem;
+}
+.phoneNumber, .contactEmail{
+    line-height: 1.8rem;
+    color: var(--white);
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.phoneNumber:hover, .contactEmail:hover{
+    color: #FF9800;
+    font-size: 1.2rem;
+}
+footer > iframe{
+    width: 40vw;
+    height: 35vh;
+    border-radius: 5px;
+}
+/*-- STYLE DLA SEKCJI FOOTER - END--*/
