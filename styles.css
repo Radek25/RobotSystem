@@ -14,6 +14,7 @@ SPIS TREŚCI
     --mainFontColor: #707070;
     --mainBlueColor: #03a9f4;
     --mainFooterColor: #404040;
+    --mainGoldColor: #FF9800;
 }
 *{
     margin: 0;
@@ -100,14 +101,41 @@ header > .languageButtonsWrapper{
 
 /*-- STYLE DLA SLIDER - BEGIN --*/
 .sliderWrapper{
+    position: relative;
     margin-top: 90px;
-    height: 450px;
+    height: 80vh;
     overflow: hidden;
 }
 .carousel-item > img{
     width: 100%;
     height: 600px;
-    filter: brightness(75%);
+    filter: brightness(28%);
+}
+.sliderContentWrapper{
+    position: absolute;
+    left: calc((100vw - 35vw)/2);
+    top: 25vh;
+    text-align: center;
+    color: var(--white);
+    font-weight: 300;
+}
+.sliderContentWrapper > h3{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 50px;
+}
+.sliderContentWrapper > p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.sliderContentWrapper > button{
+    width: 22vw;
+    height: 45px;
+    font-size: 1.2rem;
+    background-color: var(--mainGoldColor);
+    border-radius: 10px;
+    color: var(--white);
+    margin-top: 50px;
 }
 /*-- STYLE DLA SLIDER - END --*/
 
@@ -151,20 +179,8 @@ header > .languageButtonsWrapper{
     background-color: var(--mainBackgroundColor);
 }
 .howWeCanHelp > article{
-    width: 80vw;
+    width: 70vw;
     text-align: center;
-}
-.howWeCanHelp > article > button{
-    width: 170px;
-    height: 45px;
-    margin: 20px 10px 15px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    color: var(--white);
-    background-color: var(--mainBlueColor);
-    border-radius: 10px;
-    cursor: pointer;
 }
 .howWeCanHelp > div {
     margin: 50px 10px 0;
@@ -188,6 +204,18 @@ header > .languageButtonsWrapper{
 .cooperation > article{
     width: 38vw;
     text-align: center;
+}
+.cooperation > article > button{
+    width: 170px;
+    height: 45px;
+    margin: 20px 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    background-color: var(--mainBlueColor);
+    border-radius: 10px;
+    cursor: pointer;
 }
 .cooperation > img{
     width: 36vw;
@@ -237,11 +265,11 @@ footer > address{
     text-decoration: none;
     outline: none;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .phoneNumber:hover, .contactEmail:hover{
     color: #FF9800;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
 }
 footer > iframe{
     width: 40vw;
