@@ -15,11 +15,18 @@
 
     <!-- Style link -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rwdstyles.css">
+    <link rel="stylesheet" href="animations.css">
     
     <title>RobotSystem</title>
 </head>
 <body>
-    <header>
+    <nav class="mobileNavbar">
+        <img src="./imgs/logo/RobotSystem-logo.png">
+        <button id="burgerMenuBtn"><img src="./icons/menu-burger.png" alt="Show menu button"></button>
+        <button id="closeMenuBtn"><img src="./icons/cancel.png" alt="Close menu button"></button>
+    </nav>
+    <header class="responsiveLeftMenu">
         <img src="./imgs/logo/RobotSystem-logo.png">
         <nav>
             <ul>
@@ -50,7 +57,7 @@
         <div class="sliderContentWrapper">
             <h3>Transformacja przemysłu</h3>
             <p>Przemysł 4.0 to już nie przyszłość.<br/> To podstawa konkurencyjności!</p>
-            <button>Sprawdź naszą ofertę</button>
+            <button class="heartbeat">Sprawdź naszą ofertę</button>
         </div>
     </section>
     <section class="aboutUs">
@@ -64,9 +71,9 @@
                 wieloma działającymi maszynami i zadowoleniem klientów, określiło naszą wspólną 
                 misję – transformację technologiczną!
             </p>
-            <button>Oferta</button>
+            <button class="heartbeat">Oferta</button>
         </article>
-        <img src="./imgs/mainPageMaterials/AboutUsParagraphImg.png"/>
+        <img class="img-test" src="./imgs/mainPageMaterials/AboutUsParagraphImg.png"/>
     </section>
     <section class="howWeCanHelp">
         <article>
@@ -95,7 +102,7 @@
                 Czasami niewielkie zmiany mogą zaoszczędzić wiele czasu podczas rutynowej pracy. 
                 Stawiamy na wpsółpracę w zakresie opracowania koncepcji jak i finalnego rozwiązania. Tylko konsultowanie projektu z klientem zapewnia uzyskanie największej wartości dodanej. 
             </p>
-            <button>Kontakt</button>
+            <button class="heartbeat">Kontakt</button>
         </article>
     </section>
     <section class="ourCustomers">
@@ -121,6 +128,7 @@
     </footer>
 
     <!-- RobotSystem JS Script -->
+    <script src="./JSscripts/showMenu.js"></script>
     <!-- Bootstrap JS Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

@@ -15,6 +15,8 @@ SPIS TREŚCI
     --mainBlueColor: #03a9f4;
     --mainFooterColor: #404040;
     --mainGoldColor: #FF9800;
+    --hoverBtnColor: #2ebcfc;
+    --hoverBtnGoldColor: #ffad33;
 }
 *{
     margin: 0;
@@ -24,6 +26,7 @@ SPIS TREŚCI
 }
 body{
     background-color: var(--mainBackgroundColor);
+    overflow-x: hidden;
 }
 h2{
     display: inline-block;
@@ -46,6 +49,10 @@ button{
 /*-- STYLE OGÓLNE - END --*/
 
 /*-- STYLE DLA NAVBAR - BEGIN --*/
+.mobileNavbar{
+    display: none;
+}
+
 header{
     width: 100vw;
     height: 90px;
@@ -137,6 +144,9 @@ header > .languageButtonsWrapper{
     color: var(--white);
     margin-top: 50px;
 }
+.sliderContentWrapper > button:hover{
+    animation: none;
+}
 /*-- STYLE DLA SLIDER - END --*/
 
 /*-- STYLE DLA SEKCJI O NAS - BEGIN --*/
@@ -162,6 +172,10 @@ header > .languageButtonsWrapper{
     background-color: var(--mainBlueColor);
     border-radius: 10px;
     cursor: pointer;
+}
+.aboutUs > article > button:hover{
+    animation: none;
+    background-color: var(--hoverBtnColor);
 }
 .aboutUs > img{
     width: 36vw;
@@ -216,6 +230,10 @@ header > .languageButtonsWrapper{
     background-color: var(--mainBlueColor);
     border-radius: 10px;
     cursor: pointer;
+}
+.cooperation > article > button:hover{
+    animation: none;
+    background-color: var(--hoverBtnColor);
 }
 .cooperation > img{
     width: 36vw;
