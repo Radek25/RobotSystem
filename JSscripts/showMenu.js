@@ -14,18 +14,14 @@ closeMenuIcon.addEventListener("click", () => menuClick());
 function menuClick(){
     menuFlag = !menuFlag;
     if(menuFlag){
-        burgerMenuIcon.classList.remove('showMenuIcon');
         burgerMenuIcon.classList.add('hideMenuIcon');
         closeMenuIcon.classList.remove('hideMenuIcon');
         closeMenuIcon.classList.add('scale-in-center');
-        closeMenuIcon.classList.add('showMenuIcon');
     }
     else{
-        closeMenuIcon.classList.remove('showMenuIcon');
         closeMenuIcon.classList.add('hideMenuIcon');
         burgerMenuIcon.classList.remove('hideMenuIcon');
         burgerMenuIcon.classList.add('scale-in-center');
-        burgerMenuIcon.classList.add('showMenuIcon');
     }
     showOrHideLeftMenu(menuFlag);
 }

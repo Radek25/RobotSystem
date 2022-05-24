@@ -1,32 +1,51 @@
-/* mobileSmall: 'max-width: 360px',
-mobileMedium: 'max-width: 480px',
-mobileLarge: 'max-width: 760px',
-tabletsSize: 'max-width: 1024px', */
-
-
 @media screen and (max-width: 990px) {
+
+/*-- STYLE OGÓLNE DLA RWD - BEGIN --*/
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+} 
+section{
+    padding: 30px 0 !important;
+}
+article{
+    width: 95vw !important;
+}
+article > p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+} 
+
+.img-responsive{
+    width: 90vw !important;
+    height: auto !important;
+    margin: 15px 0 10px !important;
+}
+
+/*-- STYLE OGÓLNE DLA RWD - END --*/
+
 /*-- STYLE RWD DLA NAVBAR - BEGIN --*/
 
 .mobileNavbar{
     width: 100vw;
     height: 75px;
-    padding: 5px 20px;
+    padding: 5px 2.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
     position: fixed;
+    z-index: 10;
+    box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
 }
 
-.mobileNavbar >button{
+.mobileNavbar > button{
     background-color: var(--white);
     outline: none;
     width: 32px;
     height: 32px;
-}
-
-.showMenuIcon{
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -37,17 +56,19 @@ tabletsSize: 'max-width: 1024px', */
 
 .responsiveLeftMenu{
     width: 60vw;
-    height: 100vh;
+    height: 105vh;
     flex-direction: column;
     padding: 10px 20px;
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
-    box-shadow: none;
+    box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
+    /* box-shadow: none; */
 }
 
 .hideResponsiveLeftMenu{
-    left: -60vw !important;   
+    left: -65vw !important;   
 }
 
 nav > ul{
@@ -57,39 +78,98 @@ nav > ul{
     font-size: 0.9rem;
 }
 
-
 header > img{
     display: none;
 }
-body{
-    height: 1000px;
-    background-color: red;
-}
-section, footer{ 
-    display: none !important;
-}
 
 /*-- STYLE RWD DLA NAVBAR - END --*/
 
 /*-- STYLE RWD DLA SLIDER - BEGIN --*/
+
 .sliderWrapper{
-    margin-top: 10px;
+    margin-top: 0px;
+    height: auto;
 }
-/*-- STYLE RWD DLA SLIDER - END --*/
+.carousel-item > img{
+    width: 100%;
+    height: auto;
 }
-/*-- STYLE RWD DLA NAVBAR - END --*/
-@media screen and ((min-width: 361px) and (max-width: 480px)) {
-
+.sliderContentWrapper{
+    display: none;
 }
-@media screen and ((min-width: 481px) and (max-width: 760px)) {
-
-}
-@media screen and ((min-width: 761px) and (max-width: 1024px)) {
-
-}
-
-
-
-/*-- STYLE RWD DLA SLIDER - BEGIN --*/
 
 /*-- STYLE RWD DLA SLIDER - END --*/
+
+/*-- STYLE RWD DLA SEKCJI O NAS - BEGIN --*/
+
+.aboutUs{
+    flex-direction: column;
+}
+
+.aboutUs > article{
+    width: 90vw;
+}
+
+.aboutUs > img{
+    border-radius: 10px;
+}
+
+/*-- STYLE RWD DLA SEKCJI O NAS - END --*/
+
+/*-- STYLE RWD DLA SEKCJI WARTOŚĆ DODANA - BEGIN --*/
+
+.howWeCanHelp > div{
+    margin: 10px 0;
+}
+
+.howWeCanHelp > div > img:nth-child(1), .howWeCanHelp > div > img:nth-child(3){
+    display: none;
+}
+
+/*-- STYLE RWD DLA SEKCJI WARTOŚĆ DODANA - END --*/
+
+/*-- STYLE RWD DLA SEKCJI WSPÓŁPRACA - BEGIN --*/
+
+
+.cooperation{
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+/*-- STYLE RWD DLA SEKCJI WSPÓŁPRACA - END --*/
+
+/*-- STYLE RWD DLA SEKCJI ZAUFALI NAM - BEGIN --*/
+
+
+.ourCustomers > div{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.ourCustomers > div > img{
+    margin: 10px;
+}
+
+/*-- STYLE RWD DLA SEKCJI ZAUFALI NAM - END --*/
+
+
+/*-- STYLE RWD DLA SEKCJI FOOTER - BEGIN --*/
+
+footer{
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+footer > address, footer > iframe{
+    width: 90vw;
+    margin: 5px 0;
+}
+
+footer > address{
+    margin-bottom: 20px;
+}
+
+/*-- STYLE RWD DLA SEKCJI FOOTER - END --*/
+
+}

@@ -169,6 +169,7 @@
       -webkit-transform: scale(1);
               transform: scale(1);
       opacity: 1;
+      display: flex;
     }
   }
   @keyframes scale-in-center {
@@ -181,6 +182,7 @@
       -webkit-transform: scale(1);
               transform: scale(1);
       opacity: 1;
+      display: flex;
     }
   }
 /*scale-in-center - END*/
