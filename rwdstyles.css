@@ -1,175 +1,336 @@
+/*STYLE RWD DO STRONY ROBOTSYSTEM*/
+
+/*
+SPIS TREŚCI
+    1. Style dla RWD całościowego (990px).
+        a) Style ogólne.
+        b) Style dla Navbar.
+        c) Style dla sekcji O Nas.
+        d) Style dla sekcji Wartość Dodana.
+        e) Style dla sekcji Współpraca.
+        f) Style dla sekcji Zaufali Nam.
+        g) Style dla Footer.
+
+    2. Style dla RWD do 600px.
+        a) Style ogólne.
+        b) Style dla Navbar.
+        c) Style dla Slider.
+
+    3. Style dla RWD od 601px do 990px.
+        a) Style ogólne.
+        b) Style dla Navbar.
+        c) Style dla Slider.
+        d) Style dla Footer.
+*/
+
+/* -- STYLE DLA RWD DO 990px - BEGIN -- */
+
 @media screen and (max-width: 990px) {
 
-/*-- STYLE OGÓLNE DLA RWD - BEGIN --*/
+    /* -- STYLE RWD OGÓLNE DLA RWD DO 990px - BEGIN -- */
 
-h2{
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.3rem;
-} 
-section{
-    padding: 30px 0 !important;
-}
-article{
-    width: 95vw !important;
-}
-article > p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-} 
+    section {
+        padding: 25px 0 !important;
+    }
 
-.img-responsive{
-    width: 90vw !important;
-    height: auto !important;
-    margin: 15px 0 10px !important;
-}
+    .img-responsive {
+        height: auto !important;
+        margin: 15px 0 10px !important;
+    }
 
-/*-- STYLE OGÓLNE DLA RWD - END --*/
+    .hideMenuIcon,
+    header>img {
+        display: none;
+    }
 
-/*-- STYLE RWD DLA NAVBAR - BEGIN --*/
+    /* -- STYLE RWD OGOLNE DLA RWD DO 990px - END -- */
 
-.mobileNavbar{
-    width: 100vw;
-    height: 75px;
-    padding: 5px 2.5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--white);
-    position: fixed;
-    z-index: 10;
-    box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
-}
+    /* -- STYLE RWD DLA NAVBAR DO 990px - BEGIN -- */
 
-.mobileNavbar > button{
-    background-color: var(--white);
-    outline: none;
-    width: 32px;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-}
+    .mobileNavbar {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--white);
+        position: fixed;
+        z-index: 10;
+        box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
+    }
 
-.hideMenuIcon{
-    display: none;
-}
+    .mobileNavbar>button {
+        background-color: var(--white);
+        outline: none;
+        justify-content: center;
+        align-items: center;
+    }
 
-.responsiveLeftMenu{
-    width: 60vw;
-    height: 105vh;
-    flex-direction: column;
-    padding: 10px 20px;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
-    /* box-shadow: none; */
-}
+    .responsiveLeftMenu {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 20px;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        box-shadow: 0px 0px 12px 1px rgba(17, 17, 17, 1);
+    }
 
-.hideResponsiveLeftMenu{
-    left: -65vw !important;   
-}
+    .languageButtonsWrapper {
+        position: relative !important;
+        right: 0 !important;
+    }
 
-nav > ul{
-    flex-direction: column;
-    line-height: 50px;
-    padding: 0;
-    font-size: 0.9rem;
-}
+    nav>ul {
+        flex-direction: column;
+        padding: 5px;
+    }
 
-header > img{
-    display: none;
-}
+    /* -- STYLE RWD DLA NAVBAR DO 990px - END -- */
 
-/*-- STYLE RWD DLA NAVBAR - END --*/
+    /* -- STYLE RWD DLA SEKCJI O NAS DO 990px - BEGIN -- */
 
-/*-- STYLE RWD DLA SLIDER - BEGIN --*/
+    .aboutUs {
+        flex-direction: column;
+    }
 
-.sliderWrapper{
-    margin-top: 0px;
-    height: auto;
-}
-.carousel-item > img{
-    width: 100%;
-    height: auto;
-}
-.sliderContentWrapper{
-    display: none;
-}
+    .aboutUs>article {
+        width: 90vw;
+    }
 
-/*-- STYLE RWD DLA SLIDER - END --*/
+    .aboutUs>img {
+        border-radius: 10px;
+    }
 
-/*-- STYLE RWD DLA SEKCJI O NAS - BEGIN --*/
+    /* -- STYLE RWD DLA SEKCJI O NAS DO 990px - END -- */
 
-.aboutUs{
-    flex-direction: column;
-}
+    /* -- STYLE RWD DLA SEKCJI WARTOŚĆ DODANA DO 990px - BEGIN -- */
 
-.aboutUs > article{
-    width: 90vw;
-}
+    .howWeCanHelp>div {
+        margin: 10px 0;
+    }
 
-.aboutUs > img{
-    border-radius: 10px;
-}
+    .howWeCanHelp>div>img:nth-child(1),
+    .howWeCanHelp>div>img:nth-child(3) {
+        display: none;
+    }
 
-/*-- STYLE RWD DLA SEKCJI O NAS - END --*/
+    /* -- STYLE RWD DLA SEKCJI WARTOŚĆ DODANA DO 990px - END -- */
 
-/*-- STYLE RWD DLA SEKCJI WARTOŚĆ DODANA - BEGIN --*/
+    /* -- STYLE RWD DLA SEKCJI WSPÓŁPRACA DO 990px - BEGIN -- */
 
-.howWeCanHelp > div{
-    margin: 10px 0;
-}
+    .cooperation {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
 
-.howWeCanHelp > div > img:nth-child(1), .howWeCanHelp > div > img:nth-child(3){
-    display: none;
-}
+    /* -- STYLE RWD DLA SEKCJI WSPÓŁPRACA DO 990px - END -- */
 
-/*-- STYLE RWD DLA SEKCJI WARTOŚĆ DODANA - END --*/
+    /* -- STYLE RWD DLA SEKCJI ZAUFALI NAM DO 990px - BEGIN -- */
 
-/*-- STYLE RWD DLA SEKCJI WSPÓŁPRACA - BEGIN --*/
+    .ourCustomers>div {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .ourCustomers>div>img {
+        margin: 10px;
+    }
+
+    /* -- STYLE RWD DLA SEKCJI ZAUFALI NAM DO 990px - END -- */
 
 
-.cooperation{
-    justify-content: center;
-    flex-direction: column-reverse;
-}
+    /* -- STYLE RWD DLA SEKCJI FOOTER DO 990px - BEGIN -- */
 
-/*-- STYLE RWD DLA SEKCJI WSPÓŁPRACA - END --*/
+    footer {
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 5px;
+    }
 
-/*-- STYLE RWD DLA SEKCJI ZAUFALI NAM - BEGIN --*/
+    footer>address,
+    footer>iframe {
+        width: 90vw;
+        margin: 5px 0;
+    }
 
+    footer>address {
+        margin-bottom: 20px;
+    }
 
-.ourCustomers > div{
-    width: 100%;
-    flex-wrap: wrap;
-}
-.ourCustomers > div > img{
-    margin: 10px;
-}
-
-/*-- STYLE RWD DLA SEKCJI ZAUFALI NAM - END --*/
-
-
-/*-- STYLE RWD DLA SEKCJI FOOTER - BEGIN --*/
-
-footer{
-    height: auto;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 5px;
-}
-
-footer > address, footer > iframe{
-    width: 90vw;
-    margin: 5px 0;
-}
-
-footer > address{
-    margin-bottom: 20px;
-}
-
-/*-- STYLE RWD DLA SEKCJI FOOTER - END --*/
+    /* -- STYLE RWD DLA SEKCJI FOOTER DO 990px - END -- */
 
 }
+
+/* -- STYLE DLA RWD DO 600px - BEGIN -- */
+
+@media screen and (max-width: 600px) {
+
+    /* -- STYLE OGÓLNE DLA RWD - BEGIN -- */
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+        padding-bottom: 0.3rem;
+    }
+
+    article {
+        width: 95vw !important;
+    }
+
+    article>p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .img-responsive {
+        width: 90vw !important;
+    }
+
+    /* -- STYLE OGÓLNE DLA RWD - END -- */
+
+    /* -- STYLE RWD DLA NAVBAR - BEGIN -- */
+
+    .mobileNavbar {
+        height: 75px;
+        padding: 5px 2.5vw;
+    }
+
+    .mobileNavbar>button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .responsiveLeftMenu {
+        top: 75px;
+    }
+
+    .languageButtonsWrapper>button {
+        width: 45px;
+        height: 30px;
+        margin: 10px 15px 5px;
+    }
+
+    nav>ul {
+        margin: 10px;
+        line-height: 2.8rem;
+        font-size: 1.1rem;
+    }
+
+    /*-- STYLE RWD DLA NAVBAR - END --*/
+
+    /*-- STYLE RWD DLA SLIDER - BEGIN --*/
+
+    .sliderWrapper {
+        margin-top: 0px;
+        height: auto;
+    }
+
+    .carousel-item>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sliderContentWrapper {
+        display: none;
+    }
+
+    /* -- STYLE RWD DLA SLIDER - END -- */
+
+}
+
+/* -- STYLE DLA RWD DO 600px - END -- */
+
+/* -- STYLE DLA RWD OD 601px DO 990px - BEGIN -- */
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+
+    /* -- STYLE OGÓLNE DLA RWD - BEGIN -- */
+
+    article {
+        width: 75vw !important;
+    }
+
+    .img-responsive {
+        width: 60vw !important;
+    }
+
+    .mobileNavbar>img {
+        width: 20vw;
+        height: auto;
+        margin: 5px 10px;
+        transform: scale(1.3);
+    }
+
+    /* -- STYLE OGÓLNE DLA RWD - END -- */
+
+    /* -- STYLE RWD DLA NAVBAR - BEGIN -- */
+
+    .mobileNavbar {
+        height: 90px;
+        padding: 5px 4vw;
+    }
+
+    .mobileNavbar>button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .mobileNavbar>button>img {
+        transform: scale(1.5);
+    }
+
+    .responsiveLeftMenu {
+        top: 90px;
+    }
+
+    .languageButtonsWrapper>button {
+        width: 75px;
+        height: 50px;
+        margin: 10px 20px 10px;
+    }
+
+    nav>ul {
+        margin: 20px 10px 15px;
+        line-height: 4.5rem;
+        font-size: 1.8rem;
+    }
+
+    /* -- STYLE RWD DLA NAVBAR - END -- */
+
+    /* -- STYLE RWD DLA SLIDER - BEGIN -- */
+
+    .sliderWrapper {
+        margin-top: 0px;
+        height: auto;
+    }
+
+    .carousel-item>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sliderContentWrapper {
+        display: none;
+    }
+
+    /* -- STYLE RWD DLA SLIDER - END -- */
+
+    /* -- STYLE RWD DLA FOOTER - BEGIN -- */
+    footer>address,
+    .phoneNumber,
+    .contactEmail {
+        font-size: 1.2rem !important;
+    }
+
+    .phoneNumber,
+    .contactEmail {
+        font-size: 1.4rem !important;
+    }
+
+    /* -- STYLE RWD DLA FOOTER - END -- */
+
+}
+
+/* -- STYLE DLA RWD OD 601px DO 990px - BEGIN -- */

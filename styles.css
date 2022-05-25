@@ -4,13 +4,20 @@
 SPIS TREŚCI
     1. Style ogólne.
     2. Style dla NavBar.
+    3. Style dla Slider
+    4. Style dla sekcji O Nas.
+    5. Style dla sekcji Wartość Dodana.
+    6. Style dla sekcji Współpraca.
+    7. Style dla sekcji Zaufali Nam.
+    8. Style dla Footer.
 */
 
 /*-- STYLE OGÓLNE - BEGIN --*/
-:root{
+:root {
     --white: #ffffff;
     --mainBackgroundColor: #f5fafd;
-    --mainTitleColor: #3C424F;;
+    --mainTitleColor: #3C424F;
+    ;
     --mainFontColor: #707070;
     --mainBlueColor: #03a9f4;
     --mainFooterColor: #404040;
@@ -18,17 +25,20 @@ SPIS TREŚCI
     --hoverBtnColor: #2ebcfc;
     --hoverBtnGoldColor: #ffad33;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background-color: var(--mainBackgroundColor);
     overflow-x: hidden;
 }
-h2{
+
+h2 {
     display: inline-block;
     font-size: 2.7rem;
     font-weight: 500;
@@ -37,23 +47,27 @@ h2{
     padding: 0 2rem 0.6rem;
     border-bottom: 3px solid var(--mainBlueColor);
 }
-article > p{
+
+article>p {
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: var(--mainFontColor);
 }
-button{
+
+button {
     outline: none;
     border: none;
 }
+
 /*-- STYLE OGÓLNE - END --*/
 
 /*-- STYLE DLA NAVBAR - BEGIN --*/
-.mobileNavbar, .shadowBox{
+.mobileNavbar,
+.shadowBox {
     display: none;
 }
 
-header{
+header {
     width: 100vw;
     height: 90px;
     padding: 0 12vw 0 6vw;
@@ -67,16 +81,17 @@ header{
     top: 0;
 }
 
-header > img, nav{
+header>img,
+nav {
     height: 100%;
 }
 
-header > img{
+header>img {
     box-sizing: border-box;
     padding: 10px;
-} 
+}
 
-nav > ul{
+nav>ul {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -87,38 +102,43 @@ nav > ul{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-nav > ul > li > a{
+
+nav>ul>li>a {
     padding: 5px 15px;
     margin: 0px 20px;
     cursor: pointer;
 }
 
-header > .languageButtonsWrapper{
+header>.languageButtonsWrapper {
     position: absolute;
     top: 0px;
     right: 20px;
 }
-.languageButtonsWrapper > button{
+
+.languageButtonsWrapper>button {
     width: 30px;
     height: 20px;
     margin: 5px;
     background-color: red;
 }
+
 /*-- STYLE DLA NAVBAR - END --*/
 
 /*-- STYLE DLA SLIDER - BEGIN --*/
-.sliderWrapper{
+.sliderWrapper {
     position: relative;
     margin-top: 90px;
     height: 80vh;
     overflow: hidden;
 }
-.carousel-item > img{
+
+.carousel-item>img {
     width: 100%;
     height: auto;
     filter: brightness(28%);
 }
-.sliderContentWrapper{
+
+.sliderContentWrapper {
     width: 35vw;
     position: absolute;
     left: calc((100vw - 35vw)/2);
@@ -127,16 +147,19 @@ header > .languageButtonsWrapper{
     color: var(--white);
     font-weight: 300;
 }
-.sliderContentWrapper > h3{
+
+.sliderContentWrapper>h3 {
     font-size: 2.5rem;
     letter-spacing: 0.1rem;
     margin-bottom: 50px;
 }
-.sliderContentWrapper > p{
+
+.sliderContentWrapper>p {
     font-size: 1.2rem;
     margin: 10px 0;
 }
-.sliderContentWrapper > button{
+
+.sliderContentWrapper>button {
     width: 22vw;
     height: 45px;
     font-size: 1.2rem;
@@ -145,24 +168,28 @@ header > .languageButtonsWrapper{
     color: var(--white);
     margin-top: 50px;
 }
-.sliderContentWrapper > button:hover{
+
+.sliderContentWrapper>button:hover {
     animation: none;
 }
+
 /*-- STYLE DLA SLIDER - END --*/
 
 /*-- STYLE DLA SEKCJI O NAS - BEGIN --*/
-.aboutUs{
+.aboutUs {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 5vw;
     background-color: var(--mainBackgroundColor);
 }
-.aboutUs > article{
+
+.aboutUs>article {
     width: 38vw;
     text-align: center;
 }
-.aboutUs > article > button{
+
+.aboutUs>article>button {
     width: 170px;
     height: 45px;
     margin: 10px;
@@ -174,18 +201,21 @@ header > .languageButtonsWrapper{
     border-radius: 10px;
     cursor: pointer;
 }
-.aboutUs > article > button:hover{
+
+.aboutUs>article>button:hover {
     animation: none;
     background-color: var(--hoverBtnColor);
 }
-.aboutUs > img{
+
+.aboutUs>img {
     width: 36vw;
     border-radius: 50px 5px 50px 5px;
 }
+
 /*-- STYLE DLA SEKCJI O NAS - END --*/
 
 /*-- STYLE DLA SEKCJI WARTOŚĆ DODANA - BEGIN --*/
-.howWeCanHelp{
+.howWeCanHelp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,42 +223,51 @@ header > .languageButtonsWrapper{
     padding: 80px 2vw;
     background-color: var(--mainBackgroundColor);
 }
-.howWeCanHelp > article{
+
+.howWeCanHelp>article {
     width: 70vw;
     text-align: center;
 }
-.howWeCanHelp > div {
+
+.howWeCanHelp>div {
     margin: 50px 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.howWeCanHelp > div > img{
+
+.howWeCanHelp>div>img {
     height: auto;
     margin: 0 20px;
     border-radius: 10px;
 }
-.howWeCanHelp > div > img:nth-child(1), .howWeCanHelp > div > img:nth-child(3){
+
+.howWeCanHelp>div>img:nth-child(1),
+.howWeCanHelp>div>img:nth-child(3) {
     width: 25vw;
 }
-.howWeCanHelp > div > img:nth-child(2){
+
+.howWeCanHelp>div>img:nth-child(2) {
     width: 30vw;
 }
+
 /*-- STYLE DLA SEKCJI WARTOŚĆ DODANA - END --*/
 
 /*-- STYLE DLA SEKCJI WSPÓŁPRACA - BEGIN --*/
-.cooperation{
+.cooperation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 5vw;
     background-color: var(--mainBackgroundColor);
 }
-.cooperation > article{
+
+.cooperation>article {
     width: 38vw;
     text-align: center;
 }
-.cooperation > article > button{
+
+.cooperation>article>button {
     width: 170px;
     height: 45px;
     margin: 20px 10px 15px;
@@ -240,38 +279,44 @@ header > .languageButtonsWrapper{
     border-radius: 10px;
     cursor: pointer;
 }
-.cooperation > article > button:hover{
+
+.cooperation>article>button:hover {
     animation: none;
     background-color: var(--hoverBtnColor);
 }
-.cooperation > img{
+
+.cooperation>img {
     width: 36vw;
     border-radius: 10px;
 }
+
 /*-- STYLE DLA SEKCJI WSPÓŁPRACA - END --*/
 
 /*-- STYLE DLA SEKCJI ZAUFALI NAM - BEGIN --*/
-.ourCustomers{
+.ourCustomers {
     padding: 60px 10px;
     background-color: var(--mainBackgroundColor);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.ourCustomers > div{
+
+.ourCustomers>div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ourCustomers > div > img{
+
+.ourCustomers>div>img {
     width: 150px;
     margin: 10px 15px;
 }
+
 /*-- STYLE DLA SEKCJI ZAUFALI NAM - END --*/
 
 /*-- STYLE DLA SEKCJI FOOTER - BEGIN--*/
-footer{
+footer {
     height: 40vh;
     background-color: var(--mainFooterColor);
     box-shadow: 0px 0px 4px 1px var(--mainFontColor);
@@ -280,13 +325,16 @@ footer{
     align-items: center;
     padding: 10px 10vw;
 }
-footer > address{
+
+footer>address {
     width: 20vw;
     color: var(--white);
     text-align: center;
     line-height: 0.8rem;
 }
-.phoneNumber, .contactEmail{
+
+.phoneNumber,
+.contactEmail {
     line-height: 1.8rem;
     color: var(--white);
     text-decoration: none;
@@ -294,13 +342,17 @@ footer > address{
     cursor: pointer;
     font-size: 1rem;
 }
-.phoneNumber:hover, .contactEmail:hover{
+
+.phoneNumber:hover,
+.contactEmail:hover {
     color: #FF9800;
     font-size: 1.05rem;
 }
-footer > iframe{
+
+footer>iframe {
     width: 40vw;
     height: auto;
     border-radius: 5px;
 }
+
 /*-- STYLE DLA SEKCJI FOOTER - END--*/

@@ -6,7 +6,7 @@ let menuFlag = false;
 
 burgerMenuIcon.classList.add('showMenuIcon');
 closeMenuIcon.classList.add('hideMenuIcon');
-navHeader.classList.add('hideResponsiveLeftMenu');
+navHeader.style.opacity = 0;
 
 burgerMenuIcon.addEventListener("click", () => menuClick());
 closeMenuIcon.addEventListener("click", () => menuClick());
@@ -28,14 +28,11 @@ function menuClick(){
 
 function showOrHideLeftMenu(menuFlag){
     if(!menuFlag){
-        navHeader.classList.remove('slide-in-left');
-        navHeader.classList.add('slide-out-left');
-        document.body.style.overflow = "auto";
+        navHeader.classList.remove('slide-in-top');
+        navHeader.classList.add('slide-out-top');
     }
     else{
-        navHeader.classList.remove('hideResponsiveLeftMenu');
-        navHeader.classList.remove('slide-out-left');
-        navHeader.classList.add('slide-in-left');
-        document.body.style.overflow = "hidden";
+        navHeader.classList.remove('slide-out-top');
+        navHeader.classList.add('slide-in-top');
     }
 }
